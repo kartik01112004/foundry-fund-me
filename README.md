@@ -109,3 +109,5 @@ Error Handling
 The contract uses a custom error FundMe\_\_NotOwner to handle the case where a non-owner tries to call the withdraw function.
 
 Overall, this contract provides a simple way for users to fund a contract with Ether and for the contract owner to withdraw the funds, while using the Chainlink price feed to convert the ETH amount to USD.
+
+`forge test --mt testPriceFeedIsAccurate -vvv --fork-url $SEPOLIA_RPC_URL`
