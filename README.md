@@ -111,3 +111,17 @@ The contract uses a custom error FundMe\_\_NotOwner to handle the case where a n
 Overall, this contract provides a simple way for users to fund a contract with Ether and for the contract owner to withdraw the funds, while using the Chainlink price feed to convert the ETH amount to USD.
 
 `forge test --mt testPriceFeedIsAccurate -vvv --fork-url $SEPOLIA_RPC_URL`
+
+### Cheatcodes in foundry 
+
+`expectRevert()` means that next line should fail and the test should pass
+
+## Foundry Chisel
+
+Write solidity in terminal
+
+## Anvil gas price
+
+its default to zero
+
+setting gas price : `vm.txgasPrice(GAS_PRICE);`
